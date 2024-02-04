@@ -1,11 +1,15 @@
+import React from 'react';
+import { BrowserRouter as Router,  Routes, Route } from 'react-router-dom';
+import HeroSection from './pages/Home/HeroSection';
 
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>App</h1>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element= {<HeroSection />} />
+      </Routes>
+    </Router>
   );
 }
 
